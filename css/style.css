@@ -236,6 +236,7 @@ body {
   color: #002C62;
   padding: .67vw 0;
   z-index: 10000;
+  overflow: hidden;
 }
 
 .header .container {
@@ -358,6 +359,7 @@ body {
 ================================================== */
 .banner {
   position: relative;
+  overflow: hidden;
 }
 
 .banner::after {
@@ -424,6 +426,7 @@ body {
 ================================================== */
 .banner-2 {
   position: relative;
+  overflow: hidden;
 }
 
 .banner-2 .bg,
@@ -532,6 +535,7 @@ body {
 .numbers {
   position: relative;
   padding-top: 5.2vw;
+  overflow: hidden;
 }
 
 .numbers .bg-slider .swiper-slide img,
@@ -656,6 +660,7 @@ body {
   color: white;
   padding: 7.8vw 0 5.7vw 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .about .container {
@@ -801,6 +806,10 @@ body {
 
 /* #Projects
 ================================================== */
+.projects {
+  overflow: hidden;
+}
+
 .projects h2 {
   margin-bottom: 1.75vw;
 }
@@ -903,6 +912,7 @@ body {
 ================================================== */
 .contact {
   position: relative;
+  overflow: hidden;
 }
 
 .contact .bg,
@@ -1033,6 +1043,7 @@ body {
 ================================================== */
 .footer .container {
   width: 85%;
+  overflow: hidden;
 }
 
 /* Top */
