@@ -43,6 +43,10 @@ body {
   color: #F36A10;
 }
 
+.text-gray-light {
+  color: #b4b4b442;
+}
+
 @media (max-width: 1023.98px) {
   body {
     padding-top: 14.4vw;
@@ -756,13 +760,18 @@ body {
 /* #Success
 ================================================== */
 .success {
-  padding: 27.6vw 0 5.72vw 0;
+  padding: 6vw 0 5.72vw 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 .success .container {
   width: 57.8%;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 20;
+  margin-top: -8vw;
 }
 
 .success img {
@@ -773,13 +782,14 @@ body {
 
 @media (max-width: 1023.98px) {
   .success {
-    padding: 44.4vw 0 8vw 0;
+    padding: 10vw 0 8vw 0;
   }
   
   .success .container {
     width: 90%;
     display: block;
     text-align: center;
+    margin-top: -13vw;
   }
   
   .success img {
@@ -1141,4 +1151,23 @@ body {
   .footer-bottom p:not(:last-child) {
     margin-bottom: 2vw;
   }
+}
+
+/* #Text Autoplay
+================================================== */
+.text-autoplay {
+  line-height: 1;
+  overflow: hidden;
+}
+
+.text-autoplay .swiper {
+  overflow: hidden;
+}
+
+.text-autoplay .swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+  cursor: default;
+  user-select: none;
 }

@@ -156,6 +156,7 @@ button {
 .f-d-90 {font-size: 4.68vw !important; /* 90px */ }
 .f-d-95 {font-size: 4.95vw !important; /* 95px */ }
 .f-d-100 {font-size: 5.2vw !important; /* 100px */ }
+.f-d-500 {font-size: 26vw !important; /* 500px */ }
 
 /* Font Mobile (f-m) */
 /* Fonts made from 750px desktop design */
@@ -199,6 +200,7 @@ button {
   .f-m-100 {font-size: 13.3vw !important; /* 100px */ }
   .f-m-105 {font-size: 14vw !important; /* 105px */ }
   .f-m-110 {font-size: 14.66vw !important; /* 110px */ }
+  .f-m-350 {font-size: 46.66vw !important; /* 350px */ }
 }
 
 .ultra-light {

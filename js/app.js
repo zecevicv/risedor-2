@@ -148,3 +148,30 @@ ScrollTrigger.create({
     }
   }
 });
+
+/* #Text Autoplay
+  ======================================================= */
+if (document.querySelector('.text-autoplay .swiper')) {
+  new Swiper(".text-autoplay .swiper", {
+    loop: true,
+    freeMode: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 1
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    speed: 20000,
+    freeModeMomentum: false,
+    breakpoints: {
+      0: {
+        slidesPerView: .35,
+      },
+      1024: {
+        slidesPerView: .6,
+      }
+    }
+  });
+}
