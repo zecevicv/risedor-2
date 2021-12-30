@@ -47,6 +47,10 @@ body {
   color: #b4b4b442;
 }
 
+.text-gray {
+  color: #ADADAD;
+}
+
 @media (max-width: 1023.98px) {
   body {
     padding-top: 14.4vw;
@@ -67,7 +71,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 2.86vw;
-  font-size: .94vw;
+  font-size: 1.2vw;
 }
 
 .btn.btn-primary::before {
@@ -106,7 +110,7 @@ body {
 }
 
 .btn.btn-secondary {
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   height: 2.44vw;
   width: 14.84vw;
   color: white;
@@ -121,7 +125,7 @@ body {
 @media (max-width: 1023.98px) {
   .btn.btn-primary {
     height: 11.33vw;
-    font-size: 4.26vw;
+    font-size: 5vw;
   }
   
   .btn.btn-primary > span {
@@ -153,6 +157,7 @@ body {
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 0;
+  margin-top: .2vw;
 }
 
 .checkbox input:checked {
@@ -164,6 +169,7 @@ body {
 
 .checkbox label {
   margin-right: .5vw;
+  line-height: 1;
 }
 
 @media (max-width: 1023.98px) {
@@ -198,7 +204,7 @@ body {
 
 @media (max-width: 1023.98px) {
   .input-primary {
-    padding-bottom: 2.66vw;
+    padding-bottom: 1.66vw;
   }
   
 }
@@ -438,7 +444,7 @@ body {
 
 .banner-2 .container {
   position: absolute;
-  top: 2vw;
+  top: 3vw;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -464,7 +470,7 @@ body {
   }
   
   .banner-2 h2 {
-    margin-bottom: 1.5vw;
+    margin-bottom: 2.5vw;
   }
   
   .banner-2 .container img {
@@ -601,11 +607,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 8.5vw!important;
+    /* width: 8.5vw!important; */
   }
   
   .numbers .nums-slider .swiper-slide {
-    margin: 0 3vw;
+    /* margin: 0 3vw; */
   }
   
   .numbers .nums-slider .text {
@@ -668,17 +674,18 @@ body {
 }
 
 .about h2 {
-  margin-bottom: 1vw;
+  margin-bottom: .5vw;
 }
 
 .about .container > p {
   width: 64vw;
   margin: 0 auto;
   color: #ADADAD;
+  line-height: 1.2;
 }
 
 .about .container > p:first-of-type {
-  margin-bottom: .5vw;
+  margin-bottom: 1vw;
 }
 
 .about .btn {
@@ -693,7 +700,7 @@ body {
 }
 
 .about ul li {
-  flex: 0 0 9.5vw;
+  flex: 0 0 13vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -712,6 +719,11 @@ body {
 
 .about ul h3 {
   color: #F36A10;
+  line-height: 1.2;
+}
+
+.about ul p {
+  line-height: 1.2;
 }
 
 @media (max-width: 1023.98px) {
@@ -748,7 +760,7 @@ body {
   }
   
   .about ul li {
-    flex: 0 0 34%;
+    flex: 0 0 42%;
     margin-bottom: 8vw;
   }
   
@@ -783,6 +795,11 @@ body {
   width: 13.3vw;
   flex: 0 0 13.3vw;
   margin-left: 3.125vw;
+}
+
+.success .container p {
+  line-height: 1.2;
+  margin-top: 3vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -1013,7 +1030,7 @@ body {
   }
   
   .contact .form > p {
-    margin-bottom: 6.66vw;
+    margin-bottom: 5.33vw;
   }
   
   .contact .form .btn {
@@ -1021,7 +1038,7 @@ body {
   }
   
   .contact .form .checkbox {
-    margin-top: 6.66vw;
+    margin-top: 5.33vw;
   }
   
   .contact .form .row-1 {
@@ -1035,7 +1052,7 @@ body {
   
   .contact .form .row-1 > input,
   .contact .form .row-2 > input {
-    margin-bottom: 6.66vw;
+    margin-bottom: 5.33vw;
   }
 }
 
