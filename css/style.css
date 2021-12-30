@@ -1162,6 +1162,8 @@ body {
 
 .text-autoplay .swiper {
   overflow: hidden;
+  width: 98%;
+  margin: 0 auto;
 }
 
 .text-autoplay .swiper-wrapper {
