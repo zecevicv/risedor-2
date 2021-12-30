@@ -39,6 +39,9 @@ if (
   document.querySelector('.numbers .nums-slider .swiper') &&
   document.querySelector('.numbers .bg-slider .swiper')
 ) {
+
+  const numsSlider = document.querySelector('.numbers .nums-slider');
+
   // Slider Initialization
   let thumbsSlider = new Swiper(".numbers .nums-slider .swiper", {
     breakpoints: {
@@ -79,6 +82,12 @@ if (
           gallerySlider.slideTo(slideTo - 1);
         }
       });
+    });
+  }
+
+  if (window.innerWidth > 1024) {
+    numsSlider.addEventListener('mouseleave', (e) => {
+      gallerySlider.slideTo(0);
     });
   }
 

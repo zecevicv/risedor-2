@@ -579,7 +579,30 @@ body {
 .numbers .nums-slider {
   text-align: center;
   line-height: 1;
-  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .numbers .nums-slider .swiper-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .numbers .nums-slider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 8.5vw!important;
+  }
+  
+  .numbers .nums-slider .swiper-slide {
+    margin: 0 3vw;
+  }
+  
+  .numbers .nums-slider .text {
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 1023.98px) {
