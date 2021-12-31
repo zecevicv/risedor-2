@@ -225,6 +225,8 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 1.36;
+  position: relative;
+  z-index: 10;
 }
 
 .section-heading img {
@@ -564,11 +566,19 @@ body {
   height: 5.88vw;
 }
 
-/* Project 2 Page */
-.project-2-page .banner::after {
+/* Custom Shadow */
+.project-2-page .banner::after,
+.about-page .banner::after {
   background-image: linear-gradient(to top, #2B2B2B, transparent);
   height: 35%;
   opacity: 1;
+}
+
+/* About Page */
+.about-page .banner .container {
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 34.37vw;
 }
 
 @media (min-width: 1024px) {
@@ -629,6 +639,23 @@ body {
     background-image: linear-gradient(to top, #2B2B2B, transparent);
     height: 35%;
     opacity: 1;
+  }
+
+  /* About Page */
+  .about-page .banner {
+    padding-bottom: 13.33vw;
+    background-color: #2B2B2B;
+  }
+
+  .about-page .banner .container {
+    top: 10.66vw;
+    width: 90%;
+    transform: translateX(-50%);
+  }
+
+  .about-page .banner-scroll {
+    bottom: 12vw;
+    transform: translateX(-50%);
   }
 }
 
@@ -1548,6 +1575,21 @@ body {
   .gallery .swiper-arrows {
     display: none;
   }
+
+  /* Gallery Page */
+  /* .about-page .gallery {
+    padding-bottom: 11.33vw;
+    margin-bottom: 0;
+  } */
+
+  .about-page .gallery .section-heading {
+    margin-top: 0;
+    padding-top: 10vw;
+  }
+
+  .about-page .gallery::after {
+    height: 100vw;
+  }
 }
 
 /* #Blog Posts
@@ -2067,6 +2109,9 @@ body {
   
   .project-about .project-img img {
     width: 100%;
+    height: 75.46vw;
+    object-fit: cover;
+    object-position: center;
   }
   
   .project-about .sidebar {
@@ -2167,5 +2212,121 @@ body {
   /* Project 2 Page */
   .project-2-page .media-boxes {
     padding-bottom: 26vw;
+  }
+
+  /* About Page */
+  .about-page .media-box {
+    flex-direction: column!important;
+  }
+}
+
+/* #Text Section
+================================================== */
+.text-section {
+  background-color: #2B2B2B;
+  color: white;
+  text-align: center;
+  padding: 6.77vw 0 5vw 0;
+}
+
+.text-section .container {
+  width: 84%;
+  background-color: #1F2323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9.3vw 15.6vw;
+}
+
+.text-section .dots {
+  margin: 1.5vw 0 1.8vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .text-section {
+    padding: 10vw 0;
+  }
+  
+  .text-section .container {
+    width: 90%;
+    padding: 10vw 5vw 8vw 5vw;
+  }
+  
+  .text-section .dots {
+    margin: 2vw 0 5vw 0;
+  }
+}
+
+/* #About Team
+================================================== */
+.about-team {
+  position: relative;
+  padding: 12vw 0 10.4vw 0;
+}
+
+.about-team .container {
+  position: relative;
+  z-index: 2;
+  width: 59%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.about-team .img {
+  flex: 0 0 24.5vw;
+  margin-left: 6.4vw;
+}
+
+.about-team .img img {
+  width: 100%;
+  height: 31.45vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-team .dots {
+  margin: 1.2vw 0 1.5vw 0;
+}
+
+.about-team .bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-team .bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+ 
+@media (max-width: 1023.98px) {
+  .about-team {
+    position: relative;
+    padding: 23.33vw 0 16vw 0;
+  }
+  
+  .about-team .container {
+    width: 90%;
+    display: block;
+  }
+  
+  .about-team .img {
+    margin-left: 0;
+    margin-bottom: 8vw;
+  }
+  
+  .about-team .img img {
+    height: 108vw;
+  }
+  
+  .about-team .dots {
+    margin: 2vw 0 5vw 0;
   }
 }
