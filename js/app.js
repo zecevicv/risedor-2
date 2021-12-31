@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 
 /* #Video Popup
   ======================================================= */
-const videoPopupToggler = document.querySelector('.home-page .banner .popup-toggler');
+const videoPopupToggler = document.querySelector('.home-page .banner .popup-toggler') || document.querySelector('.video-section .popup-toggler');
 
 // Message Modal Handler
 if (videoPopupToggler) {
@@ -173,5 +173,74 @@ if (document.querySelector('.text-autoplay .swiper')) {
         slidesPerView: .6,
       }
     }
+  });
+}
+
+/* #Documents Slider
+  ======================================================= */
+new Swiper(".documents .swiper", {
+  loop: true,
+  pagination: {
+    el: ".documents .swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+/* #Gallery Slider
+  ======================================================= */
+new Swiper(".gallery .swiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".gallery .swiper-button-next",
+    prevEl: ".gallery .swiper-button-prev",
+  },
+  pagination: {
+    el: ".gallery .swiper-pagination",
+  }
+});
+
+/* #Blog Posts Slider
+  ======================================================= */
+new Swiper(".blog-posts .swiper", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: ".blog-posts .swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 15
+    },
+    1024: {
+      spaceBetween: 0
+    }
+  }
+});
+
+/* #Plans Imgs
+================================================== */
+if (document.querySelector('.plans .img-toggler')) {
+  const imgTogglerLinks = document.querySelectorAll('.plans .img-toggler');
+  const imgs = document.querySelectorAll('.plans .imgs li');
+
+  imgTogglerLinks.forEach((toggler, index) => {
+    toggler.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      for (let i = 0; i < imgTogglerLinks.length; i++) {
+        imgTogglerLinks[i].classList.remove('active');
+        imgs[i].classList.remove('active');
+      }
+
+      toggler.classList.add('active');
+      imgs[index].classList.add('active');
+    });
   });
 }
