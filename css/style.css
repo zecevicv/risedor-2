@@ -554,6 +554,10 @@ body {
   margin-bottom: .5vw;
 }
 
+.banner p {
+  line-height: 1.2;
+}
+
 .banner-scroll {
   position: absolute;
   left: 50%;
@@ -2061,6 +2065,7 @@ body {
 .project-about .sidebar {
   border-right: 1px solid #C8C8C8;
   padding-right: 4.68vw;
+  flex: 0 0 18.75vw;
 }
 
 .project-about .sidebar ul li {
