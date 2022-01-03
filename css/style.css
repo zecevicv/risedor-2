@@ -543,6 +543,7 @@ body {
   width: 50%;
   color: white;
   text-align: center;
+  z-index: 10;
 }
 
 .banner-logo img {
@@ -572,17 +573,28 @@ body {
 
 /* Custom Shadow */
 .project-page .banner::after,
+.projects-page .banner::after,
 .about-page .banner::after {
   background-image: linear-gradient(to top, #2B2B2B, transparent);
-  height: 35%;
+  height: 50%;
   opacity: 1;
 }
 
+.projects-page .banner::after {
+  height: 100%;
+}
+
 /* About Page */
-.about-page .banner .container {
+/* Projects Page */
+.about-page .banner .container,
+.projects-page .banner .container {
   top: 45%;
   transform: translate(-50%, -50%);
   width: 34.37vw;
+}
+
+.projects-page .banner .container {
+  width: 36vw;
 }
 
 @media (min-width: 1024px) {
@@ -660,6 +672,22 @@ body {
   .about-page .banner-scroll {
     bottom: 12vw;
     transform: translateX(-50%);
+  }
+
+  /* Projects Page */
+  .projects-page .banner {
+    padding-bottom: 0;
+    background-color: #2B2B2B;
+  }
+
+  .projects-page .banner .container {
+    top: 10.66vw;
+    width: 90%;
+    transform: translateX(-50%);
+  }
+
+  .projects-page .banner-scroll {
+    display: none;
   }
 }
 
