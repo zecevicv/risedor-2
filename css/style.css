@@ -571,7 +571,7 @@ body {
 }
 
 /* Custom Shadow */
-.project-2-page .banner::after,
+.project-page .banner::after,
 .about-page .banner::after {
   background-image: linear-gradient(to top, #2B2B2B, transparent);
   height: 35%;
@@ -639,7 +639,7 @@ body {
   }
   
   /* Project 2 Page */
-  .project-2-page .banner::after {
+  .project-page .banner::after {
     background-image: linear-gradient(to top, #2B2B2B, transparent);
     height: 35%;
     opacity: 1;
@@ -2181,7 +2181,7 @@ body {
 }
 
 /* Project 2 Page */
-.project-2-page .media-boxes {
+.project-page .media-boxes {
   padding-bottom: 9.7vw;
 }
 
@@ -2215,7 +2215,7 @@ body {
   }
   
   /* Project 2 Page */
-  .project-2-page .media-boxes {
+  .project-page .media-boxes {
     padding-bottom: 26vw;
   }
 
