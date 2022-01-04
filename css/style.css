@@ -2698,3 +2698,190 @@ body {
     line-height: 1.2;
   }
 }
+
+/* #Projects 2
+================================================== */
+.projects-2 {
+  background-color: #2B2B2B;
+  color: white;
+  padding: 4.95vw 0 7.55vw 0;
+}
+
+.projects-2 .container {
+  width: 84%;
+}
+
+.projects-2 .tabs {
+  display: flex;
+}
+
+/* Sidebar */
+.projects-2 .sidebar {
+  flex: 0 0 21.6vw;
+  padding-top: 4.16vw;
+}
+
+.projects-2 .sidebar .d-desktop ul {
+  position: relative;
+  line-height: 1;
+}
+
+.projects-2 .sidebar .d-desktop ul::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #C8C8C8;
+}
+
+.projects-2 .sidebar .d-desktop ul li {
+  padding-right: 1.5vw;
+  position: relative;
+  z-index: 1;
+  border-right: 1px solid transparent;
+}
+
+.projects-2 .sidebar .d-desktop ul li.active {
+  border-right: 1px solid #F5873F;
+  color: #F5873F;
+}
+
+.projects-2 .sidebar .d-desktop ul li:not(:last-child) {
+  margin-bottom: 2vw;
+}
+
+/* Main */
+.projects-2 .main .tab-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -7.55vw;
+}
+
+.projects-2 .main .tab-panel ul li {
+  flex: 0 0 28.9vw;
+  margin-bottom: 7.55vw;
+  position: relative;
+}
+
+.projects-2 .main .tab-panel .img {
+  position: relative;
+}
+
+.projects-2 .main .tab-panel .img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to top, black, transparent);
+  opacity: .5;
+}
+
+.projects-2 .main .tab-panel .img img {
+  width: 100%;
+  height: 32.4vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects-2 .main .tab-panel .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #F5873F;
+  color: #2B2B2B;
+  font-weight: 500;
+  padding: 0 .7vw;
+}
+
+.projects-2 .main .tab-panel .text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  padding: .7vw 1vw;
+  line-height: 1;
+}
+
+@media (max-width: 1023.98px) {
+  .projects-2 {
+    padding: 0 0 7.55vw 0;
+    z-index: 20;
+    position: relative;
+  }
+  
+  .projects-2 .container {
+    width: 90%;
+  }
+  
+  .projects-2 .tabs {
+    display: block;
+  }
+  
+  /* Sidebar */
+  .projects-2 .sidebar {
+    padding-top: 0;
+    transform: translateY(-50%);
+    position: relative;
+    z-index: 20;
+  }
+
+  .projects-2 .sidebar .custom-select {
+    margin-bottom: 13.33vw;
+  }
+
+  .projects-2 .sidebar .select-toggler {
+    width: 100%;
+    height: 11.33vw;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0 4.66vw;
+    position: relative;
+    background-image: url('../img/icons/chevron-down-orange.svg');
+    background-repeat: no-repeat;
+    background-position: 4.66vw 50%;
+    background-size: 2.66vw auto;
+  }
+  
+  .projects-2 .sidebar .select-menu {
+    background-color: #2B2B2B;
+    color: white;
+    width: 100%;
+    z-index: 10;
+    padding: 4.66vw;
+    border: 1px solid white;
+    bottom: 1px;
+  }
+
+  .projects-2 .sidebar .select-menu li:not(:last-child) {
+    margin-bottom: 2vw;
+  }
+  
+  /* Main */
+  .projects-2 .main .tab-panel ul {
+    display: block;
+    margin-bottom: -6.66vw;
+  }
+  
+  .projects-2 .main .tab-panel ul li {
+    margin-bottom: 6.66vw;
+  }
+  
+  .projects-2 .main .tab-panel .img img {
+    height: 87.2vw;
+  }
+  
+  .projects-2 .main .tab-panel .label {
+    padding: 0 2vw;
+  }
+  
+  .projects-2 .main .tab-panel .text {
+    padding: 4vw;
+  }
+}
