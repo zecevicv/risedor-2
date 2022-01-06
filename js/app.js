@@ -2,6 +2,30 @@
   ======================================================= */
 const body = document.querySelector('body');
 
+/* #Header
+  ======================================================= */
+const header = document.querySelector('.header');
+const hamburgerBtn = document.querySelector('.header-hamburger');
+const menuClose = document.querySelector('.header .menu-close');
+
+// Menu Open
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', (e) => {
+    console.log('btn')
+    header.classList.add('show-menu');
+    body.classList.add('no-scroll');
+  });
+}
+
+// Menu Close
+if (menuClose) {
+  menuClose.addEventListener('click', (e) => {
+    console.log('close')
+    header.classList.remove('show-menu');
+    body.classList.remove('no-scroll');
+  });
+}
+
 /* #Video Popup
   ======================================================= */
 const videoPopupToggler = document.querySelector('.home-page .banner .popup-toggler') || document.querySelector('.video-section .popup-toggler');
