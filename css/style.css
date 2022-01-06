@@ -2885,3 +2885,25 @@ body {
     padding: 4vw;
   }
 }
+
+/* #Text Page
+================================================== */
+.text-page-body {
+  background-color: #2B2B2B;
+  color: #ADADAD;
+  padding: 5.46vw 0 4.68vw 0;
+}
+
+.text-page-body .container {
+  width: 64.7%;
+}
+
+@media (max-width: 1023.98px) {
+  .text-page-body {
+    padding: 10.66vw 0 8.85vw 0;
+  }
+  
+  .text-page-body .container {
+    width: 92.13%;
+  }
+}
