@@ -2607,6 +2607,10 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+.about-team p:last-child {
+  line-height: 1.23;
+}
  
 @media (max-width: 1023.98px) {
   .about-team {
