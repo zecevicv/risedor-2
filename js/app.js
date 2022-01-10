@@ -164,7 +164,7 @@ ScrollTrigger.create({
           scrollTrigger: numbers,
           onUpdate: function () {
             // console.log(number.innerHTML)
-            number.innerHTML = zero.val.toFixed(0);
+            number.innerHTML = zero.val.toLocaleString('en-US', {maximumFractionDigits:0});
           }
         });
       });
