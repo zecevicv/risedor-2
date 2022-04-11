@@ -2998,7 +2998,7 @@ body {
 
 @media (max-width: 1023.98px) {
   .projects-2 {
-    padding: 0 0 7.55vw 0;
+    padding: 20vw 0 7.55vw 0;
     z-index: 20;
     position: relative;
   }
