@@ -164,7 +164,9 @@ ScrollTrigger.create({
           scrollTrigger: numbers,
           onUpdate: function () {
             // console.log(number.innerHTML)
-            number.innerHTML = zero.val.toLocaleString('en-US', {maximumFractionDigits:0});
+            number.innerHTML = zero.val.toLocaleString('en-US', {
+              maximumFractionDigits: 0
+            });
           }
         });
       });
@@ -268,3 +270,19 @@ if (document.querySelector('.plans .img-toggler')) {
     });
   });
 }
+
+/* #Blog Category Slider
+  ======================================================= */
+new Swiper(".blog-category .swiper", {
+  pagination: {
+    el: ".blog-category .swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.17,
+    },
+    1024: {
+      slidesPerView: 1,
+    }
+  }
+});

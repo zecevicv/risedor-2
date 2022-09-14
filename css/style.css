@@ -60,6 +60,11 @@ body {
   display: inline-block;
 }
 
+.text-underline-white {
+  border-bottom: 1px solid white;
+  display: inline-block;
+}
+
 .dots img {
   width: 3.65vw;
 }
@@ -717,14 +722,16 @@ body {
 .project-page .banner::after,
 .projects-page .banner::after,
 .about-page .banner::after,
-.media-page .banner::after {
+.media-page .banner::after,
+.blog-page .banner::after {
   background-image: linear-gradient(to top, #2B2B2B, transparent);
   height: 50%;
   opacity: 1;
 }
 
 .projects-page .banner::after,
-.media-page .banner::after {
+.media-page .banner::after,
+.blog-page .banner::after {
   height: 100%;
 }
 
@@ -735,6 +742,7 @@ body {
 .about-page .banner .container,
 .projects-page .banner .container,
 .media-page .banner .container,
+.blog-page .banner .container,
 .urban-renewal-page .banner .container {
   top: 45%;
   transform: translate(-50%, -50%);
@@ -898,6 +906,23 @@ body {
   }
 
   .media-page .banner-scroll {
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+  }
+  
+  /* Blog Page */
+  .blog-page .banner {
+    padding-bottom: 0;
+    background-color: #2B2B2B;
+  }
+
+  .blog-page .banner .container {
+    top: 37.33vw;
+    width: 90%;
+    transform: translateX(-50%);
+  }
+
+  .blog-page .banner-scroll {
     bottom: 0;
     transform: translateX(-50%) translateY(50%);
   }
@@ -3093,5 +3118,185 @@ body {
   
   .text-page-body .container {
     width: 92.13%;
+  }
+}
+
+/* #Blog Page
+================================================== */
+.blog {
+  background-color: #2B2B2B;
+  color: white;
+  padding: 4.16vw 0 8.32vw 0;
+}
+
+.blog .container {
+  width: 84%;
+}
+
+.blog ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.3vw;
+}
+
+.blog ul li {
+  flex: 0 0 33.33333%;
+  padding: 1.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .blog {
+    padding: 20vw 0;
+  }
+  
+  .blog .container {
+    width: 78%;
+  }
+  
+  .blog ul {
+    display: block;
+    margin: 0;
+  }
+  
+  .blog ul li {
+    padding: 0;
+  }
+
+  .blog ul li:not(:last-child) {
+    margin-bottom: 3vw;
+  }
+}
+
+/* #Blog Category
+================================================== */
+.blog-category {
+  background-color: #2B2B2B;
+  color: white;
+  padding: 2.34vw 0 3.65vw 0;
+}
+
+.blog-category .container {
+  width: 84%;
+}
+
+.blog-category .group {
+  padding: 3.65vw 0;
+}
+
+.blog-category h2 {
+  text-align: center;
+  margin-bottom: 2.6vw;
+}
+
+.blog-category .group > .text-center {
+  margin-top: 4vw;
+}
+
+.blog-category .swiper-pagination-bullet {
+  background: #C8C8C8;
+}
+
+.blog-category .swiper-pagination-bullet-active {
+  background: #F36A10;
+} 
+
+@media (min-width: 1024px) {
+  .blog-category .swiper {
+    display: flex;
+    margin: -1.3vw;
+  }
+
+  .blog-category .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .blog-category .swiper-slide {
+    flex: 0 0 33.33333%;
+    padding: 1.3vw;
+  }
+
+  .blog-category .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .blog-category {
+    padding: 8.66vw 0;
+  }
+  
+  .blog-category .container {
+    width: 100%;
+  }
+  
+  .blog-category .group {
+    padding: 8.66vw 0;
+  }
+  
+  .blog-category h2 {
+    margin-bottom: 5.33vw;
+  }
+  
+  .blog-category .group > .text-center {
+    margin-top: 12.4vw;
+  }
+
+  .blog-category .swiper {
+    padding-right: 3.33vw;
+    padding-bottom: 9vw;
+  }
+
+  .blog-category .swiper-slide {
+    padding: 0 2vw;
+  }
+}
+
+/* #Blog Post Card
+================================================== */
+.blog-post-card {
+  background-color: #1F2323;
+  padding: 1vw 1.3vw 1.5vw 1.3vw;
+}
+
+.blog-post-card .img img {
+  width: 100%;
+  height: 13vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-post-card .text {
+  margin-top: .78vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-card .text h3 {
+  margin: 0;
+  line-height: 1.2;
+  max-width: 75%;
+}
+
+.blog-post-card .btn {
+  margin: 0 auto;
+  margin-top: 2.6vw;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-post-card {
+    padding: 3.33vw 4vw 5vw 4vw;
+  }
+  
+  .blog-post-card .img img {
+    height: 40vw;
+  }
+  
+  .blog-post-card .text {
+    margin-top: 2vw;
+  }
+  
+  .blog-post-card .btn {
+    margin: 0 auto;
+    margin-top: 5vw;
   }
 }
