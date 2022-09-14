@@ -286,3 +286,19 @@ new Swiper(".blog-category .swiper", {
     }
   }
 });
+
+/* #Blog Post Slider
+  ======================================================= */
+new Swiper(".blog-post-slider .swiper", {
+  pagination: {
+    el: ".blog-post-slider .swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.17,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});
